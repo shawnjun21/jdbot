@@ -6,7 +6,7 @@ const Discord = require("discord.js");
 const bot = new Discord.Client();
 
 // replace this with the bot token
-const token = "NDAzMDY2OTY0MTE5MTI2MDE2.DUM9BA.BDVSIAhT01OFOPzRDezCN1ssZ44";
+const token = "ToKen";
 
 // feel free to change this next constant
 // this is probability that the bot will respond to a message
