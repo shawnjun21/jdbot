@@ -5,15 +5,13 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 
-// replace this with the bot token
-const token = "ToKen";
 
 // feel free to change this next constant
 // this is probability that the bot will respond to a message
 // pretty much, it will respond once every _____ messages
 // by default it will only respond to one out of thirty messages
 // lower is more often, higher is less often
-const probability = 1;
+const probability = 30;
 
 // this list covers 50% of JD's vocabulary
 // more than one of the same phrase increases the chance of it being used
@@ -44,7 +42,6 @@ const user_specific = {
 	["203035132700000266"]:[ // kai
 		"Libido.",
 		"Platonically.",
-		"Fucking pedophile.",
 		"Kai, sure.",
 		"Damn, Kai.",
 		"Do people always have to feel pity for you?",
@@ -77,4 +74,4 @@ bot.on("message", message =>
 	}
 });
 
-bot.login(token);
+bot.login(process.env.BOT_TOKEN);
